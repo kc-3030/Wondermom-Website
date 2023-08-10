@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wondermom Bithday Website</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="header"> Happy Birthday Wondermom! ❤️😘 </h1><img src="pngegg.png" class="wonder"
+            alt="Wonder Woman Logo" width="300">
+
+        <p class="message"> Certified message from Koffye Chappel. <br> (Aka. Special agent Koffye)</p>
+
+
+        <video class="video" width="790" height="470" border="10px" controls>
+            <source src="c:\Users\demco\Downloads\videos\Mom'sBirthdayVid.mp4" type="video/mp4">
+        </video>
+
+
+        <button class="button">
+            click here
+        </button>
+
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h1 class="header2"> This is my Wondermom!</h1>
+
+
+    <h3 class="desc">So special, loved, beautiful, and kind! I love you so much MeeMaw!</h3>
+
+    <div class="momphotos">
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/718/original/IMG_1671.jpg?1691606139"
+            alt="" width="300px">
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/724/original/IMG_2321.jpg?1691606225"
+            alt="" width="300px"><br>
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/722/original/IMG_0156.jpg?1691606194"
+            alt="" width="300px">
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/731/original/IMG_3323.jpg?1691606542"
+            width="300px"><br>
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/730/original/IMG_7205.jpg?1691606286"
+            width="300px">
+
+        <img class="endphotos"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/719/original/IMG_1037.jpg?1691606161"
+            width="300px">
+
+    </div>
+
+</body>
+<script>
+    function birthday() {
+        let passcode = prompt("Enter the secret Wonder Mom Passcode! 🔐🤫 Hint: Computer ");
+
+        passcode = passcode.toLowerCase();
+        passcode = passcode.trim();
+
+        let h1 = document.querySelector("h1");
+
+        if (passcode === "") {
+            return;
+        }
+
+
+        if (passcode === "wonderwoman731") {
+
+            if (window.confirm('Correct passcode Wondermom! Select OK to see your important message, press cancel to terminate.')) {
+                window.location.href = 'https://drive.google.com/drive/folders/1I6zgXSETOvycO1o9oeOCSO3n_T5EXPCH?usp=sharing';
+            };
+
+        }
+
+
+        else {
+            h1.innerHTML = "Wrong password!"
+        }
+    }
+
+    let clickButton = document.querySelector("button");
+    clickButton.addEventListener("click", birthday);
+</script>
+
+</html>
